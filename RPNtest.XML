@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RPNtest</name>
+    </assembly>
+    <members>
+        <member name="T:RPNtest.RPNgenerator">
+            <summary>
+            The class generates primary numbers up to the specified limit, generates RPNs and finds a distinct RPN in the list.
+            Author: Tatiana K. Jørgensen
+            Created: 10.04.2017
+            </summary>
+        </member>
+        <member name="M:RPNtest.RPNgenerator.CountDigits(System.Int32)">
+            <summary>
+            Method counts digits in any given number without converting the input parameter to String.
+            </summary>
+            <param name="x"></param>
+            <returns>integer</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:RPNtest.RPNgenerator.GenerateRpmSieveOfEratosthenes(System.Int32)" -->
+        <member name="M:RPNtest.RPNgenerator.GetRpn(System.Int32)">
+            <summary>
+            Returns the RPN in the specified position
+            </summary>
+            <param name="ndx"></param>
+            <returns>Int</returns>
+        </member>
+        <member name="M:RPNtest.RPNgenerator.SetModulo(System.Int32)">
+            <summary>
+            A helper method calculating the modulo pattern /length according to the RPN candidate number length.
+            </summary>
+            <param name="length"></param>
+            <returns>String, example "100" or "1000"</returns>
+        </member>
+        <member name="M:RPNtest.RPNgenerator.SieveOfEratosthenes(System.Int32)">
+            <summary>
+            One of the many implementations of the classic Sieve of Eratosthenes.
+            </summary>
+            <param name="limit"></param>
+            <returns>BitArray</returns>
+        </member>
+        <member name="M:RPNtest.RPNgenerator.ApproximateNthPrime(System.Int32)">
+            <summary>
+            Returns an approximate prime number
+            </summary>
+            <param name="nn"></param>
+            <returns>int</returns>
+        </member>
+        <member name="M:RPNtest.RPNgenerator.GeneratePrimes(System.String)">
+            <summary>
+            Not used
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:RPNtest.RPNgenerator.GenerateRPNs">
+            <summary>
+            DEBUG, Not used in Release. Writes RPNs to a file
+            </summary>
+        </member>
+        <member name="T:RPNtest.RPNgenerator.PrimeTool">
+            <summary>
+             Internal class for checking the prime numbers.
+            </summary>
+        </member>
+        <member name="M:RPNtest.RPNgenerator.PrimeTool.IsPrime(System.Int32)">
+            <summary>
+             Method tests, whether the parameter is a prime number.
+            </summary>
+            <param name="candidate"></param>
+            <returns>Boolean</returns>
+        </member>
+    </members>
+</doc>
